@@ -1,51 +1,53 @@
-*{
+/* Base Styles */
+* {
     padding: 0px;
     margin: 0px;
     color: white;
-    font-family: sans-serif    ;
+    font-family: sans-serif;
 }
-.main-container{
+
+.main-container {
     display: flex;
 }
-/* input:active{
-    border: none;
-    outline: none;
-} */
-input:focus{
+
+input:focus {
     border: none;
     outline: none;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     background-color: #002062;
     height: 100vh;
     width: 40vw;
-    /* border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px; */
 }
-.content h1{
+
+.content h1 {
     font-size: 35px;
     padding-bottom: 30px;
 }
-.img img{
+
+.img img {
     height: 100vh;
     width: 60vw;
 }
-.logo img{
+
+.logo img {
     height: 60px;
     width: 350px;
     margin: 40px 89px;
 }
-.inputs{
+
+.inputs {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
-.inputs input{
+
+.inputs input {
     width: 290px;
     height: 40px;
     border: none;
@@ -54,7 +56,8 @@ input:focus{
     border-bottom-right-radius: 10px;
     border-left: transparent;
 }
- .sms{
+
+.sms {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,13 +68,15 @@ input:focus{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-#pass input{
-    border-right: none!important;
+
+#pass input {
+    border-right: none !important;
     width: 260px;
-    border-top-right-radius: 0px!important;
-    border-bottom-right-radius: 0px!important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 }
-.eye{
+
+.eye {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,16 +86,18 @@ input:focus{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-#eye{
-    padding-right:20px ;
+
+#eye {
+    padding-right: 20px;
 }
-.forgot{
+
+.forgot {
     width: 330px;
     padding-top: 10px;
     text-align: right;
 }
 
-.signin button{
+.signin button {
     margin-top: 50px;
     width: 345px;
     height: 45px;
@@ -98,7 +105,8 @@ input:focus{
     border: none;
     background-color: #4671C6A6;
 }
-.or{
+
+.or {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,21 +114,21 @@ input:focus{
     color: #9B9B9B;
     margin-top: 30px;
 }
-hr{
-    
-    
+
+hr {
     color: #9B9B9B;
     width: 165px;
 }
-.options{
-    margin-top: 30px;
-   
 
+.options {
+    margin-top: 30px;
 }
-.options p{
+
+.options p {
     text-align: center;
 }
-.google{
+
+.google {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,33 +139,109 @@ hr{
     border-radius: 10px;
     margin-bottom: 10px;
 }
-#face,#face-p{
+
+#face,
+#face-p {
     padding-left: 10px;
 }
-#goo{
+
+#goo {
     padding-right: 10px;
 }
-#app{
+
+#app {
     padding-right: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #4671c6;
 }
-#acc{
+
+#acc {
     line-height: 17px;
 }
-@media screen and (max-width:1060px){
-    .img img{
+
+/* Media Queries */
+
+/* Medium Screen (max-width: 1060px) */
+@media screen and (max-width: 1060px) {
+    .img img {
         display: none;
-        
     }
-    .content{
-        height: 100vh;
+
+    .content {
+        height: 100%;
         width: 100vw;
     }
-    #acc{
+
+    #acc {
         padding-bottom: 120px;
     }
-    
+}
+
+/* Small Screen (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    .sms,.eye{
+        height: 35px;
+    }
+    #pass input{
+        width: 215px;
+    }
+    .inputs input {
+        width: 250px;
+        height: 35px;
+    }
+
+    .signin button {
+        width: 280px;
+        height: 40px;
+    }
+
+    .google {
+        width: 280px;
+        height: 40px;
+    }
+}
+
+/* Extra Small Screen (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    /* .content {
+        padding: 10px;
+    } */
+
+    .logo img {
+        height: 50px;
+        width: 250px;
+        margin: 20px 0;
+    }
+
+    .inputs input {
+        width: 200px;
+        /* height: 30px; */
+    }
+
+    .signin button {
+        width: 230px;
+        height: 35px;
+    }
+    .sms,.eye{
+        height: 35px;
+    }
+    #pass input{
+        width: 170px;
+    }
+
+    .google {
+        width: 230px;
+        height: 35px;
+    }
+
+    .or hr {
+        width: 100px;
+    }
 }
