@@ -7,12 +7,13 @@
 .main-container{
     display: flex;
 }
-input:active{
+/* input:active{
     border: none;
-    border-style: ;
-}
+    outline: none;
+} */
 input:focus{
     border: none;
+    outline: none;
 }
 .content{
     display: flex;
