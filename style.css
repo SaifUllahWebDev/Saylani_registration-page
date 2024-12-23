@@ -2,9 +2,17 @@
     padding: 0px;
     margin: 0px;
     color: white;
+    font-family: sans-serif    ;
 }
 .main-container{
     display: flex;
+}
+input:active{
+    border: none;
+    border-style: ;
+}
+input:focus{
+    border: none;
 }
 .content{
     display: flex;
@@ -18,17 +26,17 @@
     border-bottom-left-radius: 20px; */
 }
 .content h1{
-    font-size: 40px;
-    padding-bottom: 40px;
+    font-size: 35px;
+    padding-bottom: 30px;
 }
 .img img{
     height: 100vh;
     width: 60vw;
 }
 .logo img{
-    height: 114px;
-    width: 419px;
-    margin: 58px 89px;
+    height: 60px;
+    width: 350px;
+    margin: 40px 89px;
 }
 .inputs{
     display: flex;
@@ -79,4 +87,76 @@
     width: 330px;
     padding-top: 10px;
     text-align: right;
+}
+
+.signin button{
+    margin-top: 50px;
+    width: 345px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4671C6A6;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #9B9B9B;
+    margin-top: 30px;
+}
+hr{
+    
+    
+    color: #9B9B9B;
+    width: 165px;
+}
+.options{
+    margin-top: 30px;
+   
+
+}
+.options p{
+    text-align: center;
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f2d6b;
+    width: 345px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#face,#face-p{
+    padding-left: 10px;
+}
+#goo{
+    padding-right: 10px;
+}
+#app{
+    padding-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #4671c6;
+}
+#acc{
+    line-height: 17px;
+}
+@media screen and (max-width:1060px){
+    .img img{
+        display: none;
+        
+    }
+    .content{
+        height: 100vh;
+        width: 100vw;
+    }
+    #acc{
+        padding-bottom: 120px;
+    }
+    
 }
